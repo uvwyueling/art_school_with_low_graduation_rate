@@ -1,8 +1,9 @@
-# 艺术学院某专业低毕业率原因分析
+# 艺术学院数据分析：服装设计专业毕业率归因模型
+(Art School Data Analysis: Attribution Model for Declining Graduation Rates)
 
 ## 1. 业务背景与任务 (Business Context & Task)
 * **业务痛点：** 服装设计专业毕业率连续三年低于预期，当前已跌至71%，逼近停招红线（70%）。本项目旨在通过归因分析定位核心流失环节，输出挽救该专业招生资质的干预策略。
-* **核心任务：** 找到该专业低毕业率的原因
+* **核心任务：** 输出结构化洞察，为教务干预提供数据支撑。
 * **项目性质：** 项目重构，具体请参考  **7.历史版本记录  (Version History)**
 
 ## 2. 核心洞察与商业价值 (Executive Summary)
@@ -31,7 +32,8 @@ project_folder/
 ```
 
 ## 5. 环境与复现指南 (Reproduction Guide)
-**工具栈：** [列出核心工具，如 BigQuery, Python 3.13, R 4.3]
+**工具栈：**  Python 3.13 / SQL
+**核心库：**  Pandas (数据清洗), Matplotlib/Seaborn (可视化)
 
 **复现步骤：**
 1. 克隆本项目仓库：
