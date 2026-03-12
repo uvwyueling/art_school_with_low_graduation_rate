@@ -1,5 +1,13 @@
-# Ignore data files
-data/
+# Ignore all data files
+data/raw/*
+data/stage/*
+data/processed/*
+
+# Only keep the .gitkeep files
+!data/raw/.gitkeep
+!data/stage/.gitkeep
+!data/cleaned/.gitkeep
+
 *.csv
 *.xlsx
 
