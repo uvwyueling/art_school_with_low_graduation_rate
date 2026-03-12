@@ -11,6 +11,8 @@ data/processed/*
 *.csv
 *.xlsx
 
+# Ignore hash-salt
+config.py
 
 # Ignore OS generated files
 .DS_Store
