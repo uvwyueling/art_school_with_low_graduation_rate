@@ -216,7 +216,8 @@
 | year_1_class_num | TEXT | 学生第一学年所在班级，即专业分流前所在班级 | 由`df_2014_1y_gpa_ready`的[学号]列、[班级]列 和 `df_stg_reassign_ready` 的[学号]列、[所在班级]列 纵向拼接得到、修改列名 | 无缺失 |
 | grad_class_num | TEXT | 学生毕业时所在班级，即专业分流后所在班级 | 提取`df_raw_grad_ready`的[班级]列、修改列名 | 无缺失 |
 | enroll_year | TEXT | 年级，即绝大部分学生的入学年份 | 提取`df_raw_grad_ready`的[年级]列、修改列名 | 无缺失 |
-| grad_status | TEXT | 毕业详情 | 提取`df_raw_grad_ready`的[grad_status]列、修改列名 | 无缺失 |
+| grad_status | TEXT | 毕业详情 | 提取`df_raw_grad_ready`的[grad_status]列 | 无缺失 |
+| grad_major | TEXT | 学生毕业时所在的专业 | 提取`df_raw_grad_ready`的[专业]列、修改列名 | 无缺失 |
 
 
 **表名：** `fact_major_reassign`
