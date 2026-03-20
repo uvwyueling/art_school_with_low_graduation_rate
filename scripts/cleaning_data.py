@@ -201,13 +201,13 @@ print(f"y1_class_num_temp 行数：{len(y1_class_num_temp)}")
 print(temp_dim_student.head())
 print(f"合并后行数：{len(temp_dim_student)}")  
 
-stage_dim_student = temp_dim_student.drop(columns=['专业', '姓名', '是否在校','是否已毕业','毕业年份'])
+stage_dim_student = temp_dim_student.drop(columns=['姓名', '是否在校','是否已毕业','毕业年份'])
 
 # 删去“年级”列数据最后的“.0” (因为原始类型是float，cast_types() 把它转成字符串后保留了 .0)
 stage_dim_student['班级'] = stage_dim_student['班级'].str[:-2]
 
 # 修改列名
-temp_dim_student = stage_dim_student.rename(columns={'学号': 'uid','大一班级': 'year_1_class_num','班级': 'grad_class_num','年级': 'enroll_year' })
+temp_dim_student = stage_dim_student.rename(columns={'学号': 'uid','大一班级': 'year_1_class_num','班级': 'grad_class_num','年级': 'enroll_year','专业':'grad_major' })
 
 # 对uid进行哈希脱敏
 dim_student = mask_student_id(temp_dim_student)
