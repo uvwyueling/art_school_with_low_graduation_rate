@@ -30,4 +30,4 @@ print(result)
 special_students = df_raw_grad_stage[
     df_raw_grad_stage['入学年份和年级是否一致'] == False][['学号', '姓名', '年级', '入学年份', '毕业年份']]  
 
-special_students.to_csv('/Users/juri/Happy_coding/art_school_with_low_graduation_rate/data/raw/to_verify_17students.csv', index=False, encoding='utf-8-sig')
+special_students.to_csv('/Users/juri/Happy_coding/art_school_with_low_graduation_rate/data/stage/to_verify_17students.csv', index=False, encoding='utf-8-sig')
