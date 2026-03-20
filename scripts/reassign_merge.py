@@ -64,7 +64,7 @@ if not col_ok:
 # 6.3 检验空置 (合并前表格存在空值)
 null_counts_expected = (df_2015.isnull().sum()+df_2016.isnull().sum()+df_2017.isnull().sum()).sum()
 null_counts_actual = (merge_df.isnull().sum()).sum()
-null_ok = null_counts_expected = null_counts_actual
+null_ok = (null_counts_expected == null_counts_actual)
 print(f"\n【3. 空值验证】")
 
 print(f"  预期空值数：{null_counts_expected}，实际：{null_counts_actual}")
