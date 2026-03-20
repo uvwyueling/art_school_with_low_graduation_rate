@@ -79,7 +79,7 @@ print(df_stg_reassign_ready.dtypes)
 
 # 验证三位休学同学的数据是否已剔除
 drop_ok = (df_stg_reassign_ready['最终专业'].isnull() )
-print(f"  三位休学同学的数据记录：{'✅ 已成功删除' if drop_ok.any else '❌ 未删除，请复查'}")
+print(f"  三位休学同学的数据记录：{'✅ 已成功删除' if not drop_ok.any() else '❌ 未删除，请复查'}")
 
 # 作为清洗单个数据集的分割线
 print("=" * 40)
