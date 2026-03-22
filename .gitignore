@@ -1,7 +1,6 @@
 # Ignore all data files
 data/raw/*
 data/stage/*
-data/processed/*
 
 # Only keep the .gitkeep files
 !data/raw/.gitkeep
