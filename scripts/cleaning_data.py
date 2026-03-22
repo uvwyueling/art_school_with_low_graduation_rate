@@ -301,7 +301,7 @@ print(f"  其中大二至四学年：{len(fact_gpa_records[fact_gpa_records['aca
 
 from sqlalchemy import create_engine
 
-engine = create_engine('sqlite:////Users/juri/Downloads/教务系统导出和raw文件的加工步骤/art_school_reassign.db')
+engine = create_engine('sqlite:////Users/juri/Happy_coding/art_school_with_low_graduation_rate/data/processed/art_school_reassign.db')
 
 dim_student.to_sql('dim_student', con=engine, if_exists='replace', index=False)
 fact_major_reassign.to_sql('fact_major_reassign', con=engine, if_exists='replace', index=False)
@@ -309,7 +309,7 @@ fact_gpa_records.to_sql('fact_gpa_records', con=engine, if_exists='replace', ind
 
 
 # 验证数据是否成功写入
-conn = sqlite3.connect('/Users/juri/Downloads/教务系统导出和raw文件的加工步骤/art_school_reassign.db')
+conn = sqlite3.connect('/Users/juri/Happy_coding/art_school_with_low_graduation_rate/data/processed/art_school_reassign.db')
 cursor = conn.cursor()
 
 cursor.execute("SELECT COUNT(*) FROM dim_student")
