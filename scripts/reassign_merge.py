@@ -85,5 +85,5 @@ if not major_ok:
 
 
 # 7. 导出新的合并表格
-merge_df.to_csv("/Users/juri/Downloads/教务系统导出和raw文件的加工步骤/stage_reassign.csv", index=False, encoding="utf-8-sig")
+merge_df.to_csv("/Users/juri/Happy_coding/art_school_with_low_graduation_rate/data/stage/stage_reassign.csv", index=False, encoding="utf-8-sig")
 
