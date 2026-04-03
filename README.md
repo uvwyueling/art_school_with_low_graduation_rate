@@ -6,6 +6,7 @@
 * **业务痛点：** 服装与服饰设计专业毕业率连续三年低于预期，2017 级毕业率已跌至 68%，学校就停止服装专业招收新生一事进行内部讨论。本项目旨在通过归因分析、定位核心流失环节，输出提升该专业学生毕业率的干预策略。
 * **核心任务：** 输出结构化洞察，为教务干预提供数据支撑。
 * **项目性质：** 真实落地项目。此次为项目重构，具体请参考   **7. 历史版本记录**
+* **English Summary:** Since the implementation of the policy, which reassigned students to specific design majors, the graduation rate in the Fashion Design program has declined significantly. <br>First, I discovered that a mere 8–16% of students applied to the Fashion Design program as their first choice. Next, utilizing Python to analyze the GPAs of 367 students, I found a GPA gap between reassigned and non-reassigned students. Furthermore, the control group comparison revealed a graduation rate gap: 100% vs 80%. <br>The reassignment policy resulted in students with low GPAs being concentrated in the Fashion Design program, which in turn lowered the graduation rate. <br> The insight directly prompted the College to discontinue the reassignment policy.  Design students who enrolled without the policy are now approaching graduation; preliminary data suggests that the graduation rates across various majors will be comparable.
 
 
 ## 2. 核心洞察与商业价值 (Executive Summary)
